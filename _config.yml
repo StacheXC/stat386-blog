@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog Title 
-email: author_email@email.com 
-description: "Change the description so that it describes your blog" 
-baseurl: "/stat386-blog-theme" # the name of the repository 
-url: "https://esnt.github.io" #  change this to "https://<your-github-username>.github.io"
+title: Stat 386 Blog 
+email: bip22@byu.net
+description: "This is where I'll post some of the cool stuff I learn about in my data science class" 
+baseurl: "/stat386-blog" # the name of the repository 
+url: "https://StacheXC.github.io" #  change this to "https://<your-github-username>.github.io"
 image: /assets/images/headerimg.jpg
-author: Your name
-copyright: ABCD # Your initials or name or what you want the copyright to be.  Leave empty for no copyright
+author: Brett Pedersen
+copyright: BP # Your initials or name or what you want the copyright to be.  Leave empty for no copyright
 footer_description: 
 
 
