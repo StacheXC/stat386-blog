@@ -10,9 +10,11 @@ image: "/assets/images/image5.jpg"
 
 Matplotlib is python library used for making graphs. It is often used in conjunction with other commonly used python libraries, such as numpy and pandas. Plotting data is useful as a critical part of exploratory data analysis. It is a convenient way to visualize the distributions of certain features of a dataset or the relationships between features. Although you can just produce summary tables and calculate correlations, graphs are often more appealing to look at. Which is why in this tutorial, I will be going over the basics of how to use matplotlib including arguments, labels, and types of graphs.
 
+```python
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+```
 
 I will be going over how to use the pyplot module of the matplotlib library. plt is the standard alias used when importing. As said earlier, pandas is a library commonly used in conjunction with matplotlib since you often want to graph different features of a pandas dataframe. Seaborn is an alternative library used for plotting, but I am only importing it here because it comes with many premade datasets. Standard aliases for pandas and seaborn are pd and sns respectively. Let's start by getting some data to graph.
 
