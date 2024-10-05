@@ -6,6 +6,8 @@ description: A basic introduction to Matplotlib including different graphs, argu
 image: "/assets/images/image5.jpg"
 ---
 
+### If you're peer reviewing me, click on the view source repo button at the bottom. Then look at the Matplotlib_Tutorial jupyter notebook file. It's not in any of the folders. The jupyter file is what I intend for my post to look like after I've finished filling out the markdown file.
+
 Matplotlib is python library used for making graphs. It is often used in conjunction with other commonly used python libraries, such as numpy and pandas. Plotting data is useful as a critical part of exploratory data analysis. It is a convenient way to visualize the distributions of certain features of a dataset or the relationships between features. Although you can just produce summary tables and calculate correlations, graphs are often more appealing to look at. Which is why in this tutorial, I will be going over the basics of how to use matplotlib including arguments, labels, and types of graphs.
 
 import matplotlib.pyplot as plt
