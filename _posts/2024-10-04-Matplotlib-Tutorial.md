@@ -105,3 +105,5 @@ In conclusion, matplotlib is a simple tool for graphing different features of a 
 https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html
 
 https://seaborn.pydata.org/api.html
+
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/image5.jpg)
