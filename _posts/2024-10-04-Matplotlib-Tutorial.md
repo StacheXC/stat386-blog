@@ -106,4 +106,4 @@ https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html
 
 https://seaborn.pydata.org/api.html
 
-![Figure]({{site.url}}/{{site.baseurl}}/assets/images/image5.jpg)
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/bill_length_hist.png)
