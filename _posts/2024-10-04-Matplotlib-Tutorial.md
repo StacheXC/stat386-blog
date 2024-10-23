@@ -30,6 +30,8 @@ plt.hist(x = penguins['bill_length_mm'])
 plt.show()
 ```
 
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/bill_length_hist.png)
+
 Matplotlib allows us to add extra features to our plots, such as axis labels, titles and subtitles, and more. These statements are included in between the initial creation of the plot and the command that shows the plot.
 
 ```python
@@ -39,6 +41,8 @@ plt.ylabel('Count')
 plt.title('Histogram of Bill Length')
 plt.show()
 ```
+
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/bill_length_hist2.png)
 
 We can also add additional arguments to the function that creates the histogram. We can change the bin size, color, and border of the bars. We can also show the proportion of penguins that fall within a certain interval rather than just the count. All of these arguments have default values that we are overriding below.
 
@@ -50,6 +54,8 @@ plt.title('Histogram of Bill Length')
 plt.show()
 ```
 
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/bill_length_hist3.png)
+
 A barplot is a good way to visualize the number of data points that fall within each category of a certain variable. For example, it makes since to view the number of penguins of each type of species with a barplot. With matplotlib, it's a bit tricky to do this since you first need to create an intermediate dataframe to hold the count of each species. Then you can plot each species type against its associated count.
 
 ```python
@@ -60,6 +66,8 @@ plt.title('Distribution of Penguins Species')
 plt.show()
 ```
 
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/species_bar.png)
+
 We can also create graphs that visualize the relationship between 2 or more features of our dataset. For example, say we curious about the relationship between bill length and flipper length. We might intuitively believe that these variables are positively related somehow. The relationship between two quantitative variables can be visualized with a scatterplot.
 
 ```python
@@ -69,6 +77,8 @@ plt.ylabel('Flipper Length (mm)')
 plt.title('Bill Length vs Flipper Length')
 plt.show()
 ```
+
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/scatter.png)
 
 From this graph, there seems to be a positive relationship between the two measurements. In addition, there appears to be 3 clusters of points. We can color the points by species to see if the 3 species types correspond to the 3 clusters shows. The code assigns a color to each species along with creating a legend for the new scatterplot.
 
@@ -90,6 +100,8 @@ plt.legend(handles, labels, title='Species')
 plt.show()
 ```
 
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/scatter2.png)
+
 As said earlier, seaborn is an alternative library that can be used for graphing. Functions from matplotlib can work in conjunction with graphs that are generated with seaborn. For example, in the code below, the scatterplot is created with a seaborn command, though the axis labels and title are created using matplotlib. Note that it is much easier to stratify the points by species with seaborn than it is with matplotlib. It's also worth pointing out that we are now specifying a data argument so that we can just pass in the names of columns as strings to the other arguments.
 
 ```python
@@ -100,10 +112,11 @@ plt.title('Bill Length vs Flipper Length')
 plt.show()
 ```
 
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/scatter3.png)
+
 In conclusion, matplotlib is a simple tool for graphing different features of a dataset. You can add more details to a plot by adding more lines in between the creation and displaying of the plot. The pyplot module comes with several different graph types to be used for different combinations of categorical and numerical features. For further learning, check out the pyplot documentation for additional arguments, graph details, and graph types. Also, check out seaborn and compare the two libraries and how they work.
 
 https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html
 
 https://seaborn.pydata.org/api.html
 
-![Figure]({{site.url}}/{{site.baseurl}}/assets/images/bill_length_hist.png)
