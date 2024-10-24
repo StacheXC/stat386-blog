@@ -119,9 +119,5 @@ plt.show()
 
 ![Figure]({{site.url}}/{{site.baseurl}}/assets/images/scatter3.png)
 
-In conclusion, matplotlib is a simple tool for graphing different features of a dataset. You can add more details to a plot by adding more lines in between the creation and displaying of the plot. The pyplot module comes with several different graph types to be used for different combinations of categorical and numerical features. For further learning, check out the pyplot documentation for additional arguments, graph details, and graph types. Also, check out seaborn and compare the two libraries and how they work.
-
-https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html
-
-https://seaborn.pydata.org/api.html
+In conclusion, matplotlib is a simple tool for graphing different features of a dataset. You can add more details to a plot by adding more lines in between the creation and displaying of the plot. The pyplot module comes with several different graph types to be used for different combinations of categorical and numerical features. For further learning, check out the [pyplot documentation](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) for additional arguments, graph details, and graph types. Also, check out [seaborn](https://seaborn.pydata.org/api.html) and compare the two libraries and how they work.
 
