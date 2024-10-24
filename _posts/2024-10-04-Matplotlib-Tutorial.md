@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Matplotlib Tutorial"
+title:  "Matplotlib Basics: Your First Steps in Data Visualization"
 author: Brett Pedersen
 description: A basic introduction to Matplotlib including different graphs, arguments, and use with other libraries   
-image: "/assets/images/image5.jpg"
+image: "/assets/images/blog_image.png"
 ---
 
-## Note: I'm still adding the plots to the markdown file
-
-Matplotlib is python library used for making graphs. It is often used in conjunction with other commonly used python libraries, such as numpy and pandas. Plotting data is useful as a critical part of exploratory data analysis. It is a convenient way to visualize the distributions of certain features of a dataset or the relationships between features. Although you can just produce summary tables and calculate correlations, graphs are often more appealing to look at. Which is why in this tutorial, I will be going over the basics of how to use matplotlib including arguments, labels, and types of graphs.
+Matplotlib is a python library used for making graphs. It is often used in conjunction with other commonly used python libraries, such as numpy and pandas. Plotting data is useful as a critical part of exploratory data analysis. It is a convenient way to visualize the distributions of certain features of a dataset or the relationships between features. Although you can just produce summary tables and calculate correlations, graphs are often more appealing to look at. Which is why in this tutorial, I will be going over the basics of how to use matplotlib including arguments, labels, and types of graphs.
 
 ```python
 import matplotlib.pyplot as plt
@@ -22,6 +20,14 @@ I will be going over how to use the pyplot module of the matplotlib library. plt
 penguins = sns.load_dataset("penguins")
 penguins.head()
 ```
+
+|    | species   | island    |   bill_length_mm |   bill_depth_mm |   flipper_length_mm |   body_mass_g | sex    |
+|---:|:----------|:----------|-----------------:|----------------:|--------------------:|--------------:|:-------|
+|  0 | Adelie    | Torgersen |             39.1 |            18.7 |                 181 |          3750 | Male   |
+|  1 | Adelie    | Torgersen |             39.5 |            17.4 |                 186 |          3800 | Female |
+|  2 | Adelie    | Torgersen |             40.3 |            18   |                 195 |          3250 | Female |
+|  3 | Adelie    | Torgersen |            nan   |           nan   |                 nan |           nan | nan    |
+|  4 | Adelie    | Torgersen |             36.7 |            19.3 |                 193 |          3450 | Female |
 
 The palmer penguins dataframe has a few categorical variables along with a few quantitative ones. There are different graphs we can apply to each of these features individually as well as combinations of features. Let's start by making a simple histogram of bill length.
 
@@ -88,7 +94,6 @@ penguins['species_color'] = penguins['species'].map(species_colors)
 handles = [plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=color, markersize=10) 
            for color in species_colors.values()]
 labels = species_colors.keys()
-penguins.head()
 ```
 
 ```python
