@@ -2,7 +2,7 @@
 layout: post
 title:  "Gotta Plot 'Em All (Part 2)"
 author: Brett Pedersen
-description: "Performing an exploratory data analysis on several key features of the hundreds of existing pokemon moves. We identify several interesting details and relationships within the data set."   
+description: "Highlighting some key insights from the Pokemon moves data set, and introducing a streamlit app for further exploration"   
 image: "/assets/images/pokeball.png"
 ---
 
@@ -55,10 +55,10 @@ According to this plot, while some moves lean more heavily on the physical side 
 
 # Streamlit App
 
-Since my previous post, I've created a streamlit app for users to discover more insights about the data set. Here is the link. 
+Since my previous post, I've created a streamlit app for users to discover more insights about the data set. [Here](https://movesfilter.streamlit.app/) is the link. 
 
 The app has two main features. The first is that you can filter moves by certain criteria. For example, you can search for fire type moves that are physical and have a power greater than 80. After inputing criteria, you will see results containing for all relevant moves as well as the number of results. The second feature is a different kind of filter, one that filters by a key word. Even though the name of a move is a unique identifier rather than a variable, there still might be some useful predictors to extract from a move's name. For example, having the word, punch, in a move's name might indicate that it is a physical move.
 
 # Conclusion
 
-If you're interested in checking out the code used to create this app, I will include a link to the repository here. I'd encourage you to try out the app for yourself, and explore how common moves with various criteria are. I'd also encourage you to check out my previous post if you haven't already, where I got into much greater detail about the data set and cover several more insights.
+If you're interested in checking out the code used to create this app, I will include a link to the repository [here](https://github.com/StacheXC/MovesStreamlit). I'd encourage you to try out the app for yourself, and explore how common moves with various criteria are. I'd also encourage you to check out my previous post if you haven't already, where I got into much greater detail about the data set and cover several more insights.
